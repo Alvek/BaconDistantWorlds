@@ -32,7 +32,7 @@ namespace BaconDistantWorlds
         {
             if (originalValue < 72)
                 return originalValue;
-            string name = new StackTrace().GetFrame(1).GetMethod().Name;
+            string name = new StackTrace().GetFrame(2).GetMethod().Name;
             if (name == "PrepareDesignForEditor" || name == "Clone")
                 return originalValue;
             Empire empire = design.Empire;
